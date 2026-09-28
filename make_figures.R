@@ -14,7 +14,7 @@ if (!dir.exists("figures")) dir.create("figures")
 COL <- c("#4477AA", "#BB5566", "#228833")   # plug-in, +0.5 SE, +1.0 SE
 LTY <- c(1, 2, 4)
 PCH <- c(16, 17, 15)
-LEG <- c("Plug-in", "+0.5 SE", "+1.0 SE")
+LEG <- c("Plug-in", "+0.5 SE", "+SE")
 
 panel3 <- function(x, Y, ylab, ylim = NULL, href = NULL, vref = NULL,
                    main = NULL, xlab = "", xaxt_at = NULL, type = "b") {
