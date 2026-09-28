@@ -1,0 +1,5 @@
+results/*.rds
+.Rproj.user/
+.Rhistory
+.RData
+.DS_Store
