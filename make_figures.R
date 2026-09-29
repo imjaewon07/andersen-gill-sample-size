@@ -55,7 +55,7 @@ for (vt in c(2.0, 0.2)) {
          ylab = expression(Pr(power >= 0.75)),
          ylim = c(0.6, 1), href = 0.90, xaxt_at = c(100, 200, 400),
          xlab = expression(tau[T]),
-         main = bquote(V[m]^{true} == .(vt)))
+         main = bquote(V[m]^{(T)} == .(vt)))
 }
 for (vt in c(2.0, 0.2)) {
   d <- b[b$Vm_true == vt, ]
@@ -88,7 +88,7 @@ for (vt in c(2.0, 0.2)) {
          ylab = "Mean planned sample size",
          href = oracle_n[as.character(vt)], vref = 1,
          xlab = expression(s[V[m]]), type = "l",
-         main = bquote(V[m]^{true} == .(vt)))
+         main = bquote(V[m]^{(T)} == .(vt)))
 }
 for (vt in c(2.0, 0.2)) {
   d <- m[m$Vm_true == vt, ]
